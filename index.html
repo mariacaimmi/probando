@@ -1,46 +1,29 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.css">
 </head>
-
 <body>
-    <section>
-        <h1>Crear cuenta</h1>
-        <form action="enviar.php">
-            <div>
-                <label for="nombre">nombre y apellido</label>
-                <input type="text" id="nombre" name="nombre y apellido" placeholder="María Luján" />
-            </div>
-            <div>
-                <label for="Email">Email</label>
-                <input type="email" id="Email" name="email" placeholder="ej.:tunombre@email.com" required />
-            </div>
-            <div>
-                <label for="tel">Teléfono(opcional)</label>
-                <input type="tel" id="tel" name="teléfono" placeholder="ej.:22140655596" />
-            </div>
-            <div>
-                <label for="contraseña1">Contraseña</label>
-                <input type="password" id="contraseña1" />
-            </div>
-            <div>
-                <label for="contraseña2">Confirmar contraseña</label>
-                <input type="password" id="contraseña2" />
-            </div>
-            <input type="submit" value="crear cuenta" />
-        </form>
-        <p>¿ya tienes una cuenta? <a href="/index.html">Incia sesión</a> </p>
-    </section>
 
 
+        <div id="container">
+            <input type="text" name="" id="numero1">
+            <select name="" id="operacion">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="text" id="numero2">
+            <button onclick="Calcular()"> Calcular</button>
+            <input type="text" id="resultado" readonly>
+        </div>       
+
+    </div>  
 </body>
-
 </html>
